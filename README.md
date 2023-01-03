@@ -1,3 +1,2 @@
-# CC312_Network-Administration-
-Curso: Administración de Redes
-Profesor: Yuri Ccoicca
+# CC312 Administración de Redes
+
