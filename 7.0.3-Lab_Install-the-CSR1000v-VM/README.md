@@ -52,3 +52,9 @@ Aquí está toda la info del sistema:
 ![](pics_gifs/2023-01-09-00-38-40.png)
 
 ![](pics_gifs/2023-01-09-00-39-13.png)
+
+En cuanto a la configuración de la red en Virtual Box, no he tocado nada como dice la guía que seguí. Este es el adaptador host-only que está activado y conectado con la CSR1kv por defecto:
+
+![](pics_gifs/2023-01-09-09-59-13.png)
+
+![](pics_gifs/2023-01-09-10-00-10.png)
