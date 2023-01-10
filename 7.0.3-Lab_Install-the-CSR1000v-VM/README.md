@@ -33,9 +33,9 @@ show ip interface brief
 
 ![](pics_gifs/2023-01-08-20-45-30.png)
 
-Hasta aquí llegamos, porque no es posible hacerle ping, como se ve en la siguiente sección.
+En este punto tuvimos problemas. No era posible hacerle ping a CSR1kv, como se ve en la sección de problemas y soluciones.
 
-## Problemas
+## Problemas y soluciones
 
 Máquina Host:
 
@@ -58,3 +58,13 @@ En cuanto a la configuración de la red en Virtual Box, no he tocado nada como d
 ![](pics_gifs/2023-01-09-09-59-13.png)
 
 ![](pics_gifs/2023-01-09-10-00-10.png)
+
+La solución fue actualizar Virtual Box. Pasamos de la versión 6.1.38 a la  6.1.40. Y quizás lo que lo cambió todo fue que el adaptador host-only con el que vino cambió:
+
+![](pics_gifs/2023-01-09-19-51-52.png)
+
+Si no hubiera tenido una versión desactualizada, quizás también hubiera tenido el mismo problema, ya que lo que estaba mal al parecer era la configuración de este adaptador.
+
+Con esta configuración pude hacer un ping desde mi máquina host:
+
+![](pics_gifs/2023-01-09-19-54-13.png)
