@@ -33,9 +33,54 @@ show ip interface brief
 
 ![](pics_gifs/2023-01-08-20-45-30.png)
 
-En este punto tuvimos problemas. No era posible hacerle ping a CSR1kv, como se ve en la sección de problemas y soluciones.
+En este punto tuvimos un problema que parecía irresoluble. No era posible hacerle ping a CSR1kv. Afortunadamente se resolvió. Se muestra en la sección de dificultades y soluciones.
 
-## Problemas y soluciones
+A continuación probamos la conectividad lanzando un comando ping desde la VM Devasc a nuestra CSR1kv. Vemos que los tres paquetes que enviamos fueron recibidos:
+
+![](pics_gifs/2023-01-09-20-18-40.png)
+
+Habiendo comprabado la conectividad de la red, intentaremos establecer una sesión SSH es Devasc para controlar desde ahí nuestro router virtual CSR1kv.
+
+En Devasc:
+
+```
+ssh cisco@<ip_router>
+```
+
+La contraseña que usamos es _cisco123!_ Luego salimos con el comando `exit`.
+
+![](pics_gifs/2023-01-09-20-29-51.png)
+
+Ahora nos conectaremos al router por una vía distinta: la interfaz web de Cisco. Solo introlducimos en el navegador web la URL https://\<ip-router> y, si dice que es una conexión insegura, como fue nuestro caso, buscamos la opciones avanzadas para permitirla. 
+
+![](pics_gifs/2023-01-09-20-36-33.png)
+
+Username: cisco
+
+Password: cisco123!
+
+![](pics_gifs/2023-01-09-20-40-36.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Dificultades y soluciones
+
+### Problemas con el adaptador host-only
 
 Máquina Host:
 
