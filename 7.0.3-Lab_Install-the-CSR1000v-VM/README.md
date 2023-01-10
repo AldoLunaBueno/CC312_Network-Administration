@@ -61,23 +61,6 @@ Password: cisco123!
 
 ![](pics_gifs/2023-01-09-20-40-36.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Dificultades y soluciones
 
 ### Problemas con el adaptador host-only
