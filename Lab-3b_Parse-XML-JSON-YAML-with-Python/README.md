@@ -8,6 +8,22 @@ Video orientativo: https://www.youtube.com/watch?v=o-oWrnchWb4
 
 ![](pics_gifs/2023-01-09-23-52-45.png)
 
+## Parte 3. Analizar JSON en Python
+
+Instalamos los módulos para trabajar con JSON y YAML en Python con los siguientes comandos:
+
+```
+sudo apt-get install -y libjson-perl
+sudo apt-get -y install python-yaml
+```
+
+![](pics_gifs/2023-01-17-22-52-12.png)
+
+## Parte 4. Analizar YAML en Python
+
+
+
+
 
 
 
